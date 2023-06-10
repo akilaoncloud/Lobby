@@ -1,0 +1,38 @@
+body {
+    display: grid;
+    place-items: center;
+}
+
+.progress {
+    position: relative;
+
+    margin: 10px 0px;
+    width: 800px;
+    height: 100px;
+
+    background-color: grey;
+    border-radius: 14px;
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.progress_fill {
+    width: 0%;
+
+    height: 100%;
+    background-color: #009779;
+
+    transition: 0.15s;
+}
+
+.progress_label {
+    position: absolute;
+
+    transform: translateY(-50%);
+    top: 50%;
+    right: 14px;
+    
+    font: bold 20pt 'jetbrains mono', sans-serif;
+    color: azure;
+}

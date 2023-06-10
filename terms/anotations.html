@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Termos</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showit(i) {
+            document.getElementById(i).classList.toggle("show");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Termos</h1>
+
+    <h2>História da Internet</h2>
+
+    <div id="buttons">
+        <button type="button" onclick="showit('txt1')">
+            <h3 class="title">ARPANET</h3 class="title">
+            <p id="txt1">Uma pequena rede que conectava quatro computadores nos EUA, primeiro protótipo da Internet.</p>
+        </button>
+        
+        <button id='btn' type="button" onclick="showit('txt2')">
+            <h3 class="title">NCP</h3 class="title">
+            <p id="txt2"><b>N</b>etwork <b>C</b>ontrol <b>P</b>rotocol, protocolo usado pela ARPANET, que usava uma linguagem única, possibilitando assim a comunicação entre os quatro computadores. A comunicação ocorria apenas entre dois computadores, enquanto os outros deviam esperar.</p>
+        </button>
+        
+        <button type="button" onclick="showit('txt3')">
+            <h3 class="title">TCP/IP</h3 class="title">
+            <p id="txt3">O <b>T</b>ransfer <b>C</b>ontrol <b>P</b>rotocol eliminou o problema da comunicação entre os computadores serem feitas de dois em dois, porém ele não conseguia identificar todas as máquinas, o <b>I</b>nternetwork <b>P</b>rotocol foi criado justamente para eliminar esse problema do TCP, pois era um protocolo de identificação.</p>
+        </button>
+        
+        <button type="button" onclick="showit('txt4')">
+            <h3 class="title">BACKBONE</h3 class="title">
+            <p id="txt4">É uma rede principal por onde os dados dos clientes da internet trafegam.</p>
+        </button>
+        
+        <button type="button" onclick="showit('txt5')">
+            <h3 class="title">GOPHER</h3 class="title">
+            <p id="txt5">É um protocolo de redes de computadores que foi desenhado para distribuir, procurar e aceder a documentos na Internet.</p>
+        </button>
+            
+        <button type="button" onclick="showit('txt6')">
+            <h3 class="title">Unknown</h3 class="title">
+            <p id="txt6">Insert data here...</p>
+        </button>
+    </div>
+        
+    <h2 id="subtitle2" class="titles sub-titles">Siglas da Internet</h2>
+        
+    <div id="buttons">    
+        <button type="button" onclick="showit('txt7')">
+            <h3 class="title">Modem (Roteador)</h3 class="title">
+            <p id="txt7">Aparelho responsável pela <b>mo</b>dulação (conversão das ondas quadradas para ondas senoidais) e <b>dem</b>odulação (conversão das ondas senoidais para ondas quadradas).</p>
+        </button>
+        
+        <button type="button" onclick="showit('txt8')">
+            <h3 class="title">HTTP</h3 class="title">
+            <p id="txt8"><b>H</b>yper<b>T</b>ext <b>T</b>ransfer <b>P</b>rotocol, criado por Tim Berners-Lee, protocolo usado até hoje pelos computadores. Uma evolução do Gopher.</p>
+        </button>
+        
+        <button type="button" onclick="showit('txt9')">
+            <h3 class="title">HTTPS</h3 class="title">
+            <p id="txt9"><b>H</b>yper<b>T</b>ext <b>T</b>ransfer <b>P</b>rotocol <b>S</b>ecure, criado pela NetScape, protocolo usado para o envio de dados de forma criptografada e segura.</p>
+        </button>
+        
+        <button type="button" onclick="showit('txt10')">
+            <h3 class="title">DNS</h3 class="title">
+            <p id="txt10"><b>D</b>omain <b>N</b>ame <b>S</b>ystem, espécie de "agenda" eletrônica que dava nomes aos IPs (Ex.: google.com = 216.58.195.78)</p>
+        </button>
+        
+        <button type="button" onclick="showit('txt11')">
+            <h3 class="title">URL</h3 class="title">
+            <p id="txt11"><b>U</b>niform <b>R</b>esource <b>L</b>ocator, é o endereço completo do site (Ex.: akilathegoodboye.github.io ; www.google.com)</p>
+        </button>
+        
+        <button type="button" onclick="showit('txt12')">
+            <h3 class="title">Domain (Domínio)</h3 class="title">
+            <p id="txt12">É um nome único que vai conseguir identificar o seu servidor (site) ou as suas páginas.</p>
+        </button>
+        
+        <button type="button" onclick="showit('txt13')">
+            <h3 class="title">TLD</h3 class="title">
+            <p id="txt13"><b>T</b>op-<b>L</b>evel <b>D</b>omain, são terminações que indicam tecnicamente que o site é de uma instituição comercial, governamental, educacional, ONGs, artistas, etc.</p>
+        </button>
+        
+        <button type="button" onclick="showit('txt14')">
+            <h3 class="title">GTLD</h3 class="title">
+            <p id="txt14"><b>G</b>eneric <b>T</b>op-<b>L</b>evel <b>D</b>omain, são TLDs genéricos, sem indicação de país (Ex.: .com, .net, .org, .io, .info, .online, .store).</p>
+        </button>
+        
+        <button type="button" onclick="showit('txt15')">
+            <h3 class="title">CCTLD</h3 class="title">
+            <p id="txt15"><b>C</b>ountry <b>C</b>ode <b>T</b>op-<b>L</b>evel <b>D</b>omain, são TLDs com designação do país (Ex.: .com.br, .edu.us, .co.fr, .jp, .es).</p>
+        </button>
+        
+        <button type="button" onclick="showit('txt16')">
+            <h3 class="title">Unknown</h3 class="title">
+            <p id="txt16">Insert data here...</p>
+        </button>
+    </div>
+    
+    <h2 id="subtitle3" class="titles sub-titles">Termos de HTML, CSS e JS</h2>
+    
+    <div id="buttons">
+        <button type="button" onclick="showit('txt17')">
+            <h3 class="title">HTML</h3 class="title">
+            <p id="txt17"><b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage, Linguagem de marcação lida pelos navegadores para a construção do conteúdo da página.</p>
+        </button>
+        
+        <button type="button" onclick="showit('txt18')">
+            <h3 class="title">UTF-8</h3 class="title">
+            <p id="txt18"><b>8</b>-bit <b>U</b>nicode <b>T</b>ransformation <b>F</b>ormat, codificação de caracteres que contém acentos, normalmente usado em sites em português.</p>
+        </button>
+        
+        <button type="button" onclick="showit('txt19')">
+            <h3 class="title">CSS</h3 class="title">
+            <p id="txt19"><b>C</b>ascading <b>S</b>tyle <b>S</b>heets, Linguagem de marcação lida pelos navegadores para a construção do design da página.</p>
+        </button>
+        
+        <button type="button" onclick="showit('txt20')">
+            <h3 class="title">JS</h3 class="title">
+            <p id="txt20"><b>J</b>ava<b>S</b>cript, Linguagem de programação lida pelos navegadores para a construção da interatividade da página.</p>
+        </button>
+        
+        <button type="button" onclick="showit('txt21')">
+            <h3 class="title">Unknown</h3 class="title">
+            <p id="txt21">Insert data here...</p>
+        </button>
+    </div>
+</body>
+</html>

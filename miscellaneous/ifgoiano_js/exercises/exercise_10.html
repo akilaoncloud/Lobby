@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="biblioteca.js"></script>
+    <style>
+        body {
+            margin: 0px;
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        form {
+            margin-left: 14px;
+        }
+    </style>
+    <title>Exercício 10</title>
+</head>
+<body>
+    <form>
+        <h2>Cinema</h2>
+        <input type="text" placeholder="CNPJ"><br><br>
+        <input type="text" placeholder="Nome Fantasia"><br><br>
+        <input type="text" placeholder="Rua"><br><br>
+        <input type="text" placeholder="Número"><br><br>
+        <input type="text" placeholder="Bairro"><br><br>
+        <input type="text" placeholder="Cidade"><br><br>
+        <input type="text" placeholder="Estado"><br><br>
+        <input type="text" placeholder="Lotacao"><br><br>
+        <input type="button" value="Cadastrar" onclick="validarForm(0)">
+    </form>
+    <form>
+        <h2>Filme</h2>
+        <input type="text" placeholder="Código"><br><br>
+        <input type="text" placeholder="Título"><br><br>
+        <input type="text" placeholder="Ano"><br><br>
+        <input type="text" placeholder="Gênero"><br><br>
+        <input type="text" placeholder="Faixa Etária"><br><br>
+        <input type="button" value="Cadastrar" onclick="validarForm(1)">
+    </form>
+</body>
+</html>

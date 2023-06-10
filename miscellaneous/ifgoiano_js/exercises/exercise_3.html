@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 3</title>
+    <style>
+        body {
+            margin-top: 200px;
+            display: grid;
+            place-items: center;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 20pt;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body> 
+    <button id="text" onclick="check_letter()">Calcular Média</button>
+</body>
+<script>
+
+    function check_letter() {
+            
+        var nt1 = parseFloat(prompt("Insira a primeira nota:"));
+        var nt2 = parseFloat(prompt("Insira a segunda nota:"));
+        var ntf = (nt1 + nt2) / 2;
+        var mtd = confirm("Deseja usar Operador Ternário?");
+
+        switch (mtd) {
+
+            case true:
+                rslt = ternario();
+                break;
+
+            default:
+                rslt = iflse();
+        }
+
+        document.getElementById("text").innerHTML = ntf + rslt;
+
+        function iflse() {
+            if (ntf == 10) {
+                return "  / Aprovado com Concissão";
+            }
+            else if (ntf >= 7){
+                return "  / Aprovado";
+            }
+            else {
+                return " / Reprovado"
+            }
+        }
+        
+        function ternario() {
+            return (ntf == 10 ? (" | Aprovado com Concissão") : (ntf >= 7 ? (" | Aprovado") : (" | Reprovado")));
+        }
+    }
+</script>
+</html>

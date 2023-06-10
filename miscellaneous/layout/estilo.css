@@ -1,0 +1,35 @@
+#a {
+    background: rgb(255, 128, 128);
+    width: 33%;
+    height: 350px;
+    float: left;
+}
+
+#b {
+    background: rgb(126, 128, 252);
+    width: 33%;
+    height: 350px;
+    position: absolute;
+    left: 33.5%;
+}
+
+#c {
+    background: rgb(149, 248, 119);
+    width: 33%;
+    height: 350px;
+    float: right;
+    margin-bottom: 4px;
+}
+
+#d {
+    background: rgb(255, 123, 244);
+    height: 350px;
+    clear: both;
+}
+
+#e {
+    background: rgb(111, 244, 248);
+    height: 350px;
+    clear: both;
+    margin-top: 5px;
+}
