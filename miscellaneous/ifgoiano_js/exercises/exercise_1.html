@@ -1,88 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <style>
-            body {
-                background-color: #02afafd3;
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        background-color: #02afafd3;
+      }
 
-            form {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .bt {
-                background-color: #a4c7e6;
-                margin: 10px;
-                text-align: center;
-                padding: 20px 0px;
-                font-size: 20px;
-                cursor: pointer;
-                border: black solid 2px;
-                border-radius: 100px;
-                width: 250px;
-                transition: 0.25s;
-            }
-            
-            .bt:hover {
-                padding: 20px 0px;
-                letter-spacing: 2px;
-                transition: 0.25s;
-            }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-            #bt4 {
-                background-color: #c9d9e7;
-            }
+      .bt {
+        background-color: #a4c7e6;
+        margin: 10px;
+        text-align: center;
+        padding: 20px 0px;
+        font-size: 20px;
+        cursor: pointer;
+        border: black solid 2px;
+        border-radius: 100px;
+        width: 250px;
+        transition: 0.25s;
+      }
 
-            #bts {
-                display: flex;
-                flex-direction: row;
-                width: 250px;
-            }
+      .bt:hover {
+        padding: 20px 0px;
+        letter-spacing: 2px;
+        transition: 0.25s;
+      }
 
-            .bts {
-                width: 50%;
-                margin: 10px 0px;
-                border-radius: 20px;
-            }
+      #bt4 {
+        background-color: #c9d9e7;
+      }
 
-            #cnt {
-                margin-right: 4px;
-            }
+      #bts {
+        display: flex;
+        flex-direction: row;
+        width: 250px;
+      }
 
-            #rslt {
-                margin-left: 4px;
-                cursor: inherit;
-                font-weight: bold;
-                background-color: #679ecf;
-            }
+      .bts {
+        width: 50%;
+        margin: 10px 0px;
+        border-radius: 20px;
+      }
 
-            #rslt:hover {
-                letter-spacing: inherit;
-            }
-        </style>
-        <title>Exercício 1</title>
-    </head>
-    <body>
-        <form id="form1" method="post" action="index.php" target="_blank">
+      #cnt {
+        margin-right: 4px;
+      }
 
-            <input id="bt1" class="bt" type="button" value="Primeiro Alert()" 
-            onclick="alert('Meu Primeiro Evento JavaScript')">
+      #rslt {
+        margin-left: 4px;
+        cursor: inherit;
+        font-weight: bold;
+        background-color: #679ecf;
+      }
 
-            <input id="bt2" class="bt" type="button" value="Nº Aleatório" 
-            onclick="alert(Math.round(Math.random()*50));">
+      #rslt:hover {
+        letter-spacing: inherit;
+      }
+    </style>
+    <title>Exercício 1</title>
+  </head>
+  <body>
+    <form id="form1" method="post" action="index.php" target="_blank">
+      <input
+        id="bt1"
+        class="bt"
+        type="button"
+        value="Primeiro Alert()"
+        onclick="alert('Meu Primeiro Evento JavaScript')"
+      />
 
-            <input id="bt3" class="bt" type="button" value="Site do imdb" 
-            onclick="window.open('https://www.imdb.com', '_blank');">
+      <input
+        id="bt2"
+        class="bt"
+        type="button"
+        value="Nº Aleatório"
+        onclick="alert(Math.round(Math.random()*50));"
+      />
 
-            <input id="bt4" class="bt" type="text" placeholder="Escreve e Reseta" 
-            onblur="reset()">
+      <input
+        id="bt3"
+        class="bt"
+        type="button"
+        value="Site do imdb"
+        onclick="window.open('https://www.imdb.com', '_blank');"
+      />
 
-            <div id="bts">
-                <input id="cnt" class="bt bts" type="button" value="25 / 3" 
-                onclick="
+      <input
+        id="bt4"
+        class="bt"
+        type="text"
+        placeholder="Escreve e Reseta"
+        onblur="reset()"
+      />
+
+      <div id="bts">
+        <input
+          id="cnt"
+          class="bt bts"
+          type="button"
+          value="25 / 3"
+          onclick="
                     alert('Pressione >'); 
                     
                     document.onkeyup = function(e){
@@ -90,10 +113,11 @@
                             document.getElementById('rslt').innerHTML = '24 | Resto ' + 25 % 3;
                         }
                     }
-                ">
+                "
+        />
 
-                <h1 id="rslt" class="bts bt"></h1>
-            </div>
-        </form>
-    </body>
+        <h1 id="rslt" class="bts bt"></h1>
+      </div>
+    </form>
+  </body>
 </html>
