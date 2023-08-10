@@ -15,7 +15,7 @@
 
         public function cadastrar() {
             $objeto = new Conexao();
-            $sql = "INSERT INTO livro (codigo, nome, autor, data_pb, edicao, id_biblioteca)
+            $sql = "INSERT INTO livro (codigo, nome, autor, data_pb, edicao, biblioteca)
                     VALUES ('$this->codigo', '$this->nome', '$this->autor', '$this->data_pb', '$this->edicao', '$this->id_biblioteca');";
             $objeto->set("sql", $sql);  
             $objeto->query();
@@ -31,7 +31,7 @@
                     autor='$this->autor', 
                     data_pb='$this->data_pb', 
                     edicao='$this->edicao',
-                    id_biblioteca='$this->id_biblioteca'
+                    biblioteca='$this->id_biblioteca'
                     WHERE codigo='$this->codigo'";
             $objeto->set("sql", $sql);  
             $objeto->query();
@@ -41,13 +41,13 @@
         public function pesquisar()
         {
             $objeto = new Conexao();
-            $sql = "SELECT livro.codigo, livro.nome, livro.autor, livro.data_pb, livro.edicao, livro.id_biblioteca, biblioteca.nome FROM livro INNER JOIN biblioteca ON (biblioteca.id = livro.id_biblioteca) WHERE 
+            $sql = "SELECT livro.codigo, livro.nome, livro.autor, livro.data_pb, livro.edicao, livro.biblioteca, biblioteca.nome FROM livro INNER JOIN biblioteca ON (biblioteca.idBiblioteca = livro.biblioteca) WHERE 
                     livro.codigo LIKE '$this->codigo' OR 
                     livro.nome LIKE '$this->nome' OR
                     livro.autor LIKE '$this->autor' OR
                     livro.data_pb LIKE '$this->data_pb' OR
                     livro.edicao LIKE '$this->edicao' OR
-                    livro.id_biblioteca LIKE '$this->id_biblioteca'";
+                    livro.biblioteca LIKE '$this->id_biblioteca'";
             $objeto->set("sql", $sql);  
             $resultado = $objeto->query()->fetch_all(MYSQLI_NUM);
             $msg = "";
@@ -71,5 +71,3 @@
             return "Excluído com Sucesso";
         }
     }
-
-?>

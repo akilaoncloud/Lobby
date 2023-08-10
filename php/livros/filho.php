@@ -43,14 +43,13 @@ if (!empty($_POST)) {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="wcodigoth=device-wcodigoth, initial-scale=1.0">
-  <title>Livros</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
   <style>
     body {
       display: flex;
@@ -65,7 +64,25 @@ if (!empty($_POST)) {
 
 <body>
   <div>
-    <h1>Pesquisar Livro</h1>
+    <h1>Biblioteca</h1>
+    <form action="" method="post">
+      <h2>id</h2>
+      <input type="text" name="id"><br>
+      <h2>Nome</h2>
+      <input type="text" name="nome"><br>
+      <h2>Endereço</h2>
+      <input type="text" name="endereco"><br>
+      <h2>Bairro</h2>
+      <input type="text" name="bairro"><br>
+      <h2>Cidade</h2>
+      <input type="text" name="cidade"><br><br>
+      <input type="submit" value="Cadastrar" name="cadastrar">
+      <input type="submit" value="Alterar" name="alterar">
+      <input type="submit" value="Excluir" name="excluir">
+    </form><br>
+  </div>
+  <div>
+    <h1>Livros</h1>
     <form action="" method="post">
       <h2>Codigo</h2>
       <input type="text" name="codigo"><br>
@@ -79,13 +96,18 @@ if (!empty($_POST)) {
       <input type="text" name="edicao"><br><br>
       <h2>Biblioteca</h2>
       <input type="text" name="id_biblioteca"><br><br>
-      <input type="submit" value="Pesquisar" name="pesquisar">
+      <input type="submit" value="Cadastrar" name="cadastrar">
+      <input type="submit" value="Alterar" name="alterar">
+      <input type="submit" value="Excluir" name="excluir">
     </form><br>
   </div>
-  <form name="dados">
-    <button onclick="abrir('filho.php')">Cadastrar Livro</button>
-    <input name="codigo" type="text">
-  </form>
+  <script>
+    var msg = "<?php echo $msg; ?>";
+
+    if (msg != "") {
+      retorna(msg);
+    }
+  </script>
 </body>
 
 </html>

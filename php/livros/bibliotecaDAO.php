@@ -14,7 +14,7 @@
 
         public function cadastrar() {
             $objeto = new Conexao();
-            $sql = "INSERT INTO biblioteca (id, nome, endereco, bairro, cidade)
+            $sql = "INSERT INTO biblioteca (idBiblioteca, nome, endereco, bairro, cidade)
                     VALUES ('$this->id', '$this->nome', '$this->endereco', '$this->bairro', '$this->cidade');";
             $objeto->set("sql", $sql);  
             $objeto->query();
@@ -30,7 +30,7 @@
                     endereco='$this->endereco', 
                     bairro='$this->bairro', 
                     cidade='$this->cidade'
-                    WHERE id='$this->id'";
+                    WHERE idBiblioteca='$this->id'";
             $objeto->set("sql", $sql);  
             $objeto->query();
             return "Alterado com Sucesso";
@@ -40,11 +40,9 @@
         {
             $objeto = new Conexao();
             $sql = "DELETE FROM biblioteca
-                    WHERE id='$this->id'";
+                    WHERE idBiblioteca='$this->id'";
             $objeto->set("sql", $sql);  
             $objeto->query();
             return "Excluído com Sucesso";
         }
     }
-
-?>

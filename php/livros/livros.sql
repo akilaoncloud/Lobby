@@ -6,7 +6,7 @@ CREATE TABLE biblioteca(
     nome varchar(80) not null,
     endereco varchar(80) not null,
     bairro varchar(30) not null,
-	cidade varchar(30) not null,
+    cidade varchar(30) not null,
     primary key (id)
 );
 
@@ -16,7 +16,7 @@ CREATE TABLE livro(
     nome varchar(80) not null,
     autor varchar(20) not null,
     data_pb varchar(20) not null,
-	edicao varchar(20) not null,
+    edicao varchar(20) not null,
     biblioteca int,
     primary key (id),
     foreign key (biblioteca) references biblioteca(idBiblioteca)
