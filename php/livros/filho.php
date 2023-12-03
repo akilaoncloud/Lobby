@@ -83,11 +83,11 @@ if (!empty($_POST)) {
   </div>
   <div>
     <h1>Livros</h1>
-    <form action="" method="post">
+    <form action="" method="post" onsubmit="adicionaLinha();">
       <h2>Codigo</h2>
-      <input type="text" name="codigo"><br>
+      <input type="text" name="codigo" id="codigo"><br>
       <h2>Nome</h2>
-      <input type="text" name="nome"><br>
+      <input type="text" name="nome" id="nome"><br>
       <h2>Autor</h2>
       <input type="text" name="autor"><br>
       <h2>Data de Publicação</h2>

@@ -51,22 +51,13 @@ if (!empty($_POST)) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="wcodigoth=device-wcodigoth, initial-scale=1.0">
   <title>Livros</title>
-  <style>
-    body {
-      display: flex;
-    }
-
-    div {
-      width: 400px;
-    }
-  </style>
   <script src="script.js"></script>
 </head>
 
 <body>
   <div>
     <h1>Pesquisar Livro</h1>
-    <form action="" method="post">
+    <form>
       <h2>Codigo</h2>
       <input type="text" name="codigo"><br>
       <h2>Nome</h2>
@@ -82,10 +73,12 @@ if (!empty($_POST)) {
       <input type="submit" value="Pesquisar" name="pesquisar">
     </form><br>
   </div>
-  <form name="dados">
-    <button onclick="abrir('filho.php')">Cadastrar Livro</button>
-    <input name="codigo" type="text">
-  </form>
+
+  <button onclick="abrir('filho.php')">Cadastrar Livro</button>
+  <input name="codigo" id="codigo" type="text">
+
+  <table id="tbl" border="1">
+  </table>
 </body>
 
 </html>
