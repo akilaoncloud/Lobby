@@ -1,0 +1,155 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+
+  height: 100vh;
+
+  font-family: "Jetbrains Mono";
+  color: white;
+
+  background: rgb(30, 33, 62);
+  background: linear-gradient(90deg, #1e213e 0%, #1e213e 39%, #0567cb 100%);
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 60vw 40vw;
+  place-items: center;
+
+  grid-template-areas:
+    "banner main"
+    "call main"
+    "cargo main"
+    "button footer";
+}
+
+.card {
+  grid-area: banner;
+  align-self: start;
+  width: 140px;
+}
+
+h1 {
+  grid-area: call;
+  text-align: center;
+  font-size: 25pt;
+  margin: 0px 20px;
+}
+
+h2 {
+  grid-area: cargo;
+
+  background-color: #0567cb;
+  padding: 30px 25px;
+  border-radius: 40px;
+  width: fit-content;
+  text-align: center;
+  margin: 0;
+
+  box-shadow: 5px 6px black;
+}
+
+main {
+  grid-area: main;
+  justify-self: center;
+
+  margin: 0px 20px;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1em 2em;
+  align-items: center;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.icons {
+  width: 100px;
+  margin: 8% 0;
+}
+
+.first {
+  margin-top: 0;
+}
+
+#helper {
+  grid-area: footer;
+  margin: 0px 20px;
+  width: 300px;
+  align-self: start;
+  cursor: pointer;
+}
+
+.button {
+  grid-area: button;
+  align-self: start;
+  transition: 0.2s;
+
+  margin: 25px;
+  margin-bottom: 0px;
+  padding: 10px 20px;
+
+  background-color: #ffffff;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #1e213e;
+
+  text-decoration: none;
+  text-align: center;
+
+  cursor: pointer;
+
+  box-shadow: 5px 5px black;
+}
+
+.button:hover {
+  box-shadow: 6px 7px black;
+  font-weight: bold;
+}
+
+@media (max-width: 800px), (min-height: 800px), (max-height: 500px) {
+  #grid {
+    grid-template-columns: auto 0;
+    grid-template-areas:
+      "banner"
+      "call"
+      "cargo"
+      "main"
+      "button"
+      "footer";
+  }
+
+  h1 {
+    margin: 15px;
+  }
+
+  h2 {
+    margin: 20px;
+  }
+
+  main {
+    margin: 20px;
+  }
+
+  .button {
+    margin: 20px;
+    align-self: center;
+  }
+
+  #helper {
+    margin: 20px 20px 35px 20px;
+    align-self: center;
+  }
+
+  body,
+  html {
+    height: auto;
+  }
+}
