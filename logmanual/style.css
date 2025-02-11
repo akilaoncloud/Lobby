@@ -21,10 +21,6 @@ section {
 
 /* Texto */
 
-.bckgrnd {
-  width: 100%;
-}
-
 h3 {
   font-size: 1.2rem;
   margin: 2.5px 0px;
@@ -33,30 +29,30 @@ h3 {
 
 /* Backgrounds */
 
-.easyt {
+.easy h2 {
   color: #00a143;
 }
-.easyb {
+.easy h3 {
   background-color: #015f30;
 }
 
-.normalt {
+.normal h2 {
   color: #ccad00;
 }
-.normalb {
+.normal h3 {
   background-color: #745900;
 }
 
-.hardt {
+.hard h2 {
   color: #cc7400;
 }
-.hardb {
+.hard h3 {
   background-color: #744200;
 }
 
-.hardcoret {
+.hardcore h2 {
   color: #b40000;
 }
-.hardcoreb {
+.hardcore h3 {
   background-color: #740e00;
 }
