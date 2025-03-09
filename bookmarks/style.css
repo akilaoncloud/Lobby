@@ -1,7 +1,7 @@
 body {
   font-family: monospace;
   font-size: 18pt;
-  background-color: black;
+  background-color: black;  
   margin: 55px 50px;
 }
 
@@ -9,11 +9,13 @@ body {
 
 h2 {
   font-size: 32pt;
-  margin-bottom: 25px;
+  margin: 20px 0px 30px 0px;
   color: #00ff00;
 }
 
-h3 {
+summary {
+  cursor: pointer;
+  margin: 15px 0px;
   font-weight: normal;
   text-decoration: underline;
   font-style: italic;
@@ -35,6 +37,6 @@ a {
 }
 
 a:hover {
-  padding: 0px 2%;
+  padding: 0px 1%;
   transition: 0.4s;
 }
